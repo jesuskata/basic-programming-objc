@@ -20,15 +20,17 @@
     
     int x = 5;
     int y = -3;
-    x = 2;
     
-    int earthRadius = 6730;
-    int earthRadius2 = 13460;
+    // int earthRadius = 6730;
+    // int earthRadius2 = 13460;
     
     int z = x/y;
-    z = x*y;
-    z = x+y;
-    z = x-y;
+    NSLog(@"z as int is %d",z);
+    // Tip: to not create a new variable we'll multiply x and y for 1.0
+    float zFloat = ((1.0*x)/(1.0*y));
+    NSLog(@"z as float is %f",zFloat);
+    double zDouble = ((1.0*x)/(1.0*y));
+    NSLog(@"z as double is %f",zDouble);
 }
 
 
