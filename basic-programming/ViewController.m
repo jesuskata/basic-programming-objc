@@ -89,6 +89,18 @@
         i++;
     }
     NSLog(@"We finished in the step %d", i);
+    
+    NSLog(@"Counting from 10 to 0 whit the while BUCLE");
+    int counter = 10;
+    while (counter >= 0) {
+        NSLog(@"The count is in %d", counter);
+        counter--;
+    }
+    
+    NSLog(@"Counting from 10 to 0 whit the for BUCLE");
+    for (int counterFor = 10; counterFor >= 0; counterFor--) {
+        NSLog(@"the count is in %d", counterFor);
+    }
 }
 
 
