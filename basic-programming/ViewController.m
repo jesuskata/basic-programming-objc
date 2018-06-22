@@ -76,6 +76,10 @@
     } else {
         NSLog(@"You are really a good driver");
     }
+    
+    for (int i = 0; i < 10; i++) {
+        NSLog(@"I'm in the step %d", i);
+    }
 }
 
 
