@@ -77,9 +77,18 @@
         NSLog(@"You are really a good driver");
     }
     
+    NSLog(@"Here begins the for BUCLE");
     for (int i = 0; i < 10; i++) {
         NSLog(@"I'm in the step %d", i);
     }
+    
+    NSLog(@"Here begins the while BUCLE");
+    int i = 0;
+    while (i < 10) {
+        NSLog(@"We are in the step %d from the while BUCLE", i);
+        i++;
+    }
+    NSLog(@"We finished in the step %d", i);
 }
 
 
