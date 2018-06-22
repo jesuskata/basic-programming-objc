@@ -44,6 +44,14 @@
     }
     
     NSLog(@"Radar surpassed");
+    
+    BOOL airConditionerIsOn = NO;
+    
+    if (airConditionerIsOn) {
+        NSLog(@"What a beautiful air is in here!");
+    } else {
+        NSLog(@"What!!!, please turn on the air conditioner");
+    }
 }
 
 
