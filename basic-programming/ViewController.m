@@ -45,12 +45,36 @@
     
     NSLog(@"Radar surpassed");
     
-    BOOL airConditionerIsOn = NO;
+    BOOL airConditionerIsOn = YES;
     
     if (airConditionerIsOn) {
         NSLog(@"What a beautiful air is in here!");
     } else {
         NSLog(@"What!!!, please turn on the air conditioner");
+    }
+    
+    // The car is a seriously old one. If the speed >= 90, the air conditioner can't be turned on
+    
+    speed = 90;
+    airConditionerIsOn = YES;
+    
+    if (speed >= 90) {
+        if (airConditionerIsOn) {
+            NSLog(@"Turn off the air conditioner or slow down my friend, this can explode in any time");
+        } else {
+            NSLog(@"We are going faster than 90 km/hr, but the air conditioner is turned off");
+        }
+    } else {
+        NSLog(@"We are driven well, there's nothing to worry about");
+    }
+    
+    // && -> AND
+    // || -> OR
+    //  ! -> NOT
+    if (speed >= 90 && airConditionerIsOn) {
+        NSLog(@"Warning!!!, turn off the air conditioner or slow down my friend");
+    } else {
+        NSLog(@"You are really a good driver");
     }
 }
 
