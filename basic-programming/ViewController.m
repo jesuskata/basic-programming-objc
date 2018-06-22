@@ -18,7 +18,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    int x = 5;
+    //This is the first part of the basic-programming
+    /* int x = 5;
     int y = -3;
     
     // int earthRadius = 6730;
@@ -30,7 +31,19 @@
     float zFloat = ((1.0*x)/(1.0*y));
     NSLog(@"z as float is %f",zFloat);
     double zDouble = ((1.0*x)/(1.0*y));
-    NSLog(@"z as double is %f",zDouble);
+    NSLog(@"z as double is %f",zDouble); */
+    
+    int speed = 150;
+    
+    NSLog(@"We are close the velocity radar");
+    // There's something to do when the velocity limits are passed by a car
+    if (speed >= 120) {
+        NSLog(@"You've passed the velocity limit, this is your penalty fee");
+    } else {
+        NSLog(@"You are a good driver, please continue");
+    }
+    
+    NSLog(@"Radar surpassed");
 }
 
 
